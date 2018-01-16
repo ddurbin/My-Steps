@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="lHc-Oc-11q">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Chicle-Regular.ttf">
+            <string>Chicle-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Activity-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Core_Motion" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="64" width="414" height="672"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Steps:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="48x-PK-7iV">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="6mN-Uy-us8"/>
+                                    <constraint firstAttribute="width" constant="98" id="tcZ-D2-pu5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Chicle-Regular" family="Chicle" pointSize="32"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Distance:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Csw-GE-WYb">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="CDD-hC-fMr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Chicle-Regular" family="Chicle" pointSize="32"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2m7-IR-4eM">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="3Oa-6U-aVO"/>
+                                    <constraint firstAttribute="height" constant="59" id="RMD-JL-0ng"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Chicle-Regular" family="Chicle" pointSize="61"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gJZ-2u-S2O">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="59" id="DTQ-3P-7Gl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Chicle-Regular" family="Chicle" pointSize="62"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Floors:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qlO-rQ-zRt">
+                                <fontDescription key="fontDescription" name="Chicle-Regular" family="Chicle" pointSize="32"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YXk-KB-4HD">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="59" id="4wG-cz-jtV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Chicle-Regular" family="Chicle" pointSize="62"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eKO-Qf-vsf">
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="152" id="Ooe-1P-2qe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Chicle-Regular" family="Chicle" pointSize="31"/>
+                                <state key="normal" title="Activities">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="23z-Wm-MKu" kind="show" identifier="showActivities" id="v1G-CC-G2M"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="gJZ-2u-S2O" firstAttribute="trailing" secondItem="YXk-KB-4HD" secondAttribute="trailing" id="3yO-LC-Kst"/>
+                            <constraint firstItem="48x-PK-7iV" firstAttribute="trailing" secondItem="Csw-GE-WYb" secondAttribute="trailing" id="6Cu-uK-Fko"/>
+                            <constraint firstItem="Csw-GE-WYb" firstAttribute="top" secondItem="2m7-IR-4eM" secondAttribute="bottom" constant="22" id="7c4-kZ-VJl"/>
+                            <constraint firstItem="eKO-Qf-vsf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7gI-Xs-2zx"/>
+                            <constraint firstItem="gJZ-2u-S2O" firstAttribute="top" secondItem="Csw-GE-WYb" secondAttribute="bottom" constant="22" id="8Og-tt-IUY"/>
+                            <constraint firstItem="qlO-rQ-zRt" firstAttribute="top" secondItem="gJZ-2u-S2O" secondAttribute="bottom" constant="23" id="CmO-kV-3Mh"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="eKO-Qf-vsf" secondAttribute="bottom" constant="112" id="KNY-xt-GuO"/>
+                            <constraint firstItem="gJZ-2u-S2O" firstAttribute="leading" secondItem="YXk-KB-4HD" secondAttribute="leading" id="PPd-KB-5JC"/>
+                            <constraint firstItem="qlO-rQ-zRt" firstAttribute="trailing" secondItem="Csw-GE-WYb" secondAttribute="trailing" id="VbI-G7-9ZX"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="gJZ-2u-S2O" secondAttribute="trailing" constant="19" id="XG0-U0-UEr"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2m7-IR-4eM" secondAttribute="trailing" constant="92" id="XGB-Gq-Irz"/>
+                            <constraint firstItem="48x-PK-7iV" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="31" id="XUe-YX-RRh"/>
+                            <constraint firstItem="2m7-IR-4eM" firstAttribute="top" secondItem="48x-PK-7iV" secondAttribute="bottom" constant="20" id="Z9N-Pf-JBI"/>
+                            <constraint firstItem="gJZ-2u-S2O" firstAttribute="leading" secondItem="2m7-IR-4eM" secondAttribute="leading" id="Zgp-LO-TIj"/>
+                            <constraint firstItem="qlO-rQ-zRt" firstAttribute="leading" secondItem="Csw-GE-WYb" secondAttribute="leading" id="fcj-II-i4f"/>
+                            <constraint firstItem="48x-PK-7iV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="19" id="gSV-cI-R2G"/>
+                            <constraint firstItem="YXk-KB-4HD" firstAttribute="top" secondItem="qlO-rQ-zRt" secondAttribute="bottom" constant="23" id="k7q-qu-1hf"/>
+                            <constraint firstItem="eKO-Qf-vsf" firstAttribute="top" secondItem="YXk-KB-4HD" secondAttribute="bottom" constant="58" id="qJQ-ze-fve"/>
+                            <constraint firstItem="Csw-GE-WYb" firstAttribute="leading" secondItem="48x-PK-7iV" secondAttribute="leading" id="xPv-M8-euP"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Activity" id="SnD-PN-Szd">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="yQn-HI-rpU">
+                            <connections>
+                                <segue destination="cZX-Qn-SGX" kind="show" identifier="newActivity" id="5yX-zy-Vd7"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="allActivitiesButton" destination="eKO-Qf-vsf" id="y1c-ea-ObL"/>
+                        <outlet property="distanceLabel" destination="gJZ-2u-S2O" id="lVl-bC-uGc"/>
+                        <outlet property="floorsLabel" destination="YXk-KB-4HD" id="Qjr-LR-PJA"/>
+                        <outlet property="newActivityButton" destination="yQn-HI-rpU" id="Fdt-kS-wOl"/>
+                        <outlet property="stepsLabel" destination="2m7-IR-4eM" id="5w6-Gy-FSK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="596" y="386"/>
+        </scene>
+        <!--New Activity-->
+        <scene sceneID="G44-ky-lYa">
+            <objects>
+                <viewController id="cZX-Qn-SGX" customClass="ActivityViewController" customModule="Core_Motion" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Wp6-Wg-u48"/>
+                        <viewControllerLayoutGuide type="bottom" id="pCy-l4-d2h"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1Ci-G0-o1G">
+                        <rect key="frame" x="0.0" y="64" width="414" height="672"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Steps:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SuD-yJ-mrT">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="UaT-af-d2L"/>
+                                    <constraint firstAttribute="width" constant="98" id="Y3i-MP-Zde"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Chicle-Regular" family="Chicle" pointSize="32"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Distance:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qXx-o3-ltl">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="PU6-AY-jj0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Chicle-Regular" family="Chicle" pointSize="32"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hhs-vC-fBE">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="gbv-8c-LTJ"/>
+                                    <constraint firstAttribute="height" constant="59" id="jrn-CX-wJM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Chicle-Regular" family="Chicle" pointSize="61"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qiO-J0-Uha">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="59" id="yQj-A5-k6k"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Chicle-Regular" family="Chicle" pointSize="62"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Floors:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iiU-Jr-Lvy">
+                                <fontDescription key="fontDescription" name="Chicle-Regular" family="Chicle" pointSize="32"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m2J-VE-FGo">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="59" id="oNC-g9-0Sa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Chicle-Regular" family="Chicle" pointSize="62"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iJg-2D-Ex8">
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="139" id="Zuf-IO-F53"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Chicle-Regular" family="Chicle" pointSize="31"/>
+                                <state key="normal" title="Save">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="saveNewActivity:" destination="cZX-Qn-SGX" eventType="touchUpInside" id="cNH-r5-neh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f7Q-lP-R8d">
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Chicle-Regular" family="Chicle" pointSize="31"/>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="NpA-eF-Rpl" kind="unwind" unwindAction="unwindToMainViewController:" id="X0B-7W-1FU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="pCy-l4-d2h" firstAttribute="top" secondItem="iJg-2D-Ex8" secondAttribute="bottom" constant="91" id="0jg-XE-lN1"/>
+                            <constraint firstItem="qXx-o3-ltl" firstAttribute="leading" secondItem="iiU-Jr-Lvy" secondAttribute="leading" id="146-4D-Gp5"/>
+                            <constraint firstItem="qiO-J0-Uha" firstAttribute="leading" secondItem="m2J-VE-FGo" secondAttribute="leading" id="67w-ya-TDj"/>
+                            <constraint firstItem="SuD-yJ-mrT" firstAttribute="leading" secondItem="qXx-o3-ltl" secondAttribute="leading" id="F1y-iu-dwC"/>
+                            <constraint firstItem="iJg-2D-Ex8" firstAttribute="top" secondItem="m2J-VE-FGo" secondAttribute="bottom" constant="50" id="GKE-Kk-zLK"/>
+                            <constraint firstItem="qiO-J0-Uha" firstAttribute="top" secondItem="qXx-o3-ltl" secondAttribute="bottom" constant="26" id="L5O-ho-bH2"/>
+                            <constraint firstItem="iJg-2D-Ex8" firstAttribute="leading" secondItem="1Ci-G0-o1G" secondAttribute="leadingMargin" constant="32" id="MpI-t0-tKr"/>
+                            <constraint firstItem="m2J-VE-FGo" firstAttribute="trailing" secondItem="qiO-J0-Uha" secondAttribute="trailing" id="NAi-Fv-BMC"/>
+                            <constraint firstItem="iJg-2D-Ex8" firstAttribute="top" secondItem="f7Q-lP-R8d" secondAttribute="top" id="O2u-Ej-pQp"/>
+                            <constraint firstItem="qXx-o3-ltl" firstAttribute="trailing" secondItem="SuD-yJ-mrT" secondAttribute="trailing" id="P4D-Ju-sze"/>
+                            <constraint firstItem="iiU-Jr-Lvy" firstAttribute="top" secondItem="qiO-J0-Uha" secondAttribute="bottom" constant="26" id="PiT-aF-sYX"/>
+                            <constraint firstItem="SuD-yJ-mrT" firstAttribute="leading" secondItem="1Ci-G0-o1G" secondAttribute="leadingMargin" constant="38" id="SbS-dt-9kq"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="f7Q-lP-R8d" secondAttribute="trailing" constant="32" id="ZVw-ls-m7N"/>
+                            <constraint firstItem="f7Q-lP-R8d" firstAttribute="leading" secondItem="iJg-2D-Ex8" secondAttribute="trailing" constant="32" id="b0s-md-KbZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hhs-vC-fBE" secondAttribute="trailing" constant="73" id="dDH-8q-3ag"/>
+                            <constraint firstItem="qXx-o3-ltl" firstAttribute="top" secondItem="hhs-vC-fBE" secondAttribute="bottom" constant="30" id="fUq-ea-dty"/>
+                            <constraint firstItem="qiO-J0-Uha" firstAttribute="trailing" secondItem="1Ci-G0-o1G" secondAttribute="trailingMargin" id="fbM-Zu-Bbz"/>
+                            <constraint firstItem="qXx-o3-ltl" firstAttribute="trailing" secondItem="iiU-Jr-Lvy" secondAttribute="trailing" id="hgZ-pM-Ulh"/>
+                            <constraint firstItem="iJg-2D-Ex8" firstAttribute="baseline" secondItem="f7Q-lP-R8d" secondAttribute="firstBaseline" id="lD1-Dt-8Ff"/>
+                            <constraint firstItem="hhs-vC-fBE" firstAttribute="top" secondItem="SuD-yJ-mrT" secondAttribute="bottom" constant="32" id="mK7-AK-Fmp"/>
+                            <constraint firstItem="SuD-yJ-mrT" firstAttribute="top" secondItem="Wp6-Wg-u48" secondAttribute="bottom" constant="27" id="nMI-UF-9LW"/>
+                            <constraint firstItem="m2J-VE-FGo" firstAttribute="top" secondItem="iiU-Jr-Lvy" secondAttribute="bottom" constant="29" id="uE3-et-TJq"/>
+                            <constraint firstItem="hhs-vC-fBE" firstAttribute="leading" secondItem="qiO-J0-Uha" secondAttribute="leading" id="vig-55-ELw"/>
+                            <constraint firstItem="f7Q-lP-R8d" firstAttribute="baseline" secondItem="iJg-2D-Ex8" secondAttribute="firstBaseline" id="yEc-PQ-DaO"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="New Activity" id="qOg-O5-Jl3"/>
+                    <connections>
+                        <outlet property="cancelButton" destination="f7Q-lP-R8d" id="CiJ-ld-Y7x"/>
+                        <outlet property="distanceLabel" destination="qiO-J0-Uha" id="4Js-KL-Xqb"/>
+                        <outlet property="floorsLabel" destination="m2J-VE-FGo" id="U4q-xj-otc"/>
+                        <outlet property="saveButton" destination="iJg-2D-Ex8" id="8pD-Op-nGw"/>
+                        <outlet property="stepsLabel" destination="hhs-vC-fBE" id="PjW-nj-VAB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AbY-Nd-O9S" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="NpA-eF-Rpl" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2019" y="408"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="y1X-uz-KSe">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="lHc-Oc-11q" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="UB0-xz-np4">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="VZa-kt-JIM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DLP-xZ-oWB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-239" y="386"/>
+        </scene>
+        <!--Activities Table View Controller-->
+        <scene sceneID="dHu-Yr-fLK">
+            <objects>
+                <tableViewController id="23z-Wm-MKu" customClass="ActivitiesTableViewController" customModule="Core_Motion" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" sectionHeaderHeight="28" sectionFooterHeight="28" id="cnn-vL-csh">
+                        <rect key="frame" x="0.0" y="64" width="414" height="672"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ActivityCell" id="k2h-JZ-ull" customClass="ActivityTableViewCell" customModule="Core_Motion" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="60"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="k2h-JZ-ull" id="ew4-4a-dCF">
+                                    <frame key="frameInset" width="414" height="59.666666666666664"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qqb-p5-Rj9">
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="45" id="eIR-tQ-slo"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Chicle-Regular" family="Chicle" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Distance:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BPO-wF-D5h">
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="72" id="zXT-od-a4f"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Chicle-Regular" family="Chicle" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Floors:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zhz-Qx-rPV">
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="57" id="Kfd-iV-gYB"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Chicle-Regular" family="Chicle" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r1x-0f-4hV">
+                                            <fontDescription key="fontDescription" name="Chicle-Regular" family="Chicle" pointSize="17"/>
+                                            <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2.0 miles" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JYk-t9-myF">
+                                            <fontDescription key="fontDescription" name="Chicle-Regular" family="Chicle" pointSize="17"/>
+                                            <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hLJ-RZ-wqa">
+                                            <fontDescription key="fontDescription" name="Chicle-Regular" family="Chicle" pointSize="17"/>
+                                            <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Steps:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="djL-x9-Xir">
+                                            <fontDescription key="fontDescription" name="Chicle-Regular" family="Chicle" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="350" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jaF-wS-czi">
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="31" id="yeG-UB-yS0"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Chicle-Regular" family="Chicle" pointSize="17"/>
+                                            <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Zhz-Qx-rPV" firstAttribute="leading" secondItem="BPO-wF-D5h" secondAttribute="trailing" constant="22" id="1Lb-WQ-bZK"/>
+                                        <constraint firstItem="BPO-wF-D5h" firstAttribute="firstBaseline" secondItem="Zhz-Qx-rPV" secondAttribute="firstBaseline" id="3EO-We-C9y"/>
+                                        <constraint firstItem="Qqb-p5-Rj9" firstAttribute="firstBaseline" secondItem="djL-x9-Xir" secondAttribute="firstBaseline" id="5hb-Uz-Sn0"/>
+                                        <constraint firstItem="djL-x9-Xir" firstAttribute="firstBaseline" secondItem="BPO-wF-D5h" secondAttribute="firstBaseline" id="8Fy-OX-8ev"/>
+                                        <constraint firstItem="JYk-t9-myF" firstAttribute="leading" secondItem="BPO-wF-D5h" secondAttribute="leading" id="A4M-a8-aSf"/>
+                                        <constraint firstItem="Qqb-p5-Rj9" firstAttribute="top" secondItem="ew4-4a-dCF" secondAttribute="topMargin" constant="-5" id="Cz6-A0-Af4"/>
+                                        <constraint firstItem="BPO-wF-D5h" firstAttribute="baseline" secondItem="Zhz-Qx-rPV" secondAttribute="baseline" id="E7C-Je-fEI"/>
+                                        <constraint firstItem="jaF-wS-czi" firstAttribute="baseline" secondItem="JYk-t9-myF" secondAttribute="baseline" id="FGR-0j-T3N"/>
+                                        <constraint firstItem="jaF-wS-czi" firstAttribute="leading" secondItem="hLJ-RZ-wqa" secondAttribute="trailing" constant="13" id="IFg-Hi-nHi"/>
+                                        <constraint firstItem="Zhz-Qx-rPV" firstAttribute="trailing" secondItem="r1x-0f-4hV" secondAttribute="trailing" id="JpS-7k-NIH"/>
+                                        <constraint firstItem="JYk-t9-myF" firstAttribute="baseline" secondItem="r1x-0f-4hV" secondAttribute="baseline" id="NUf-V7-3Pa"/>
+                                        <constraint firstItem="Qqb-p5-Rj9" firstAttribute="baseline" secondItem="djL-x9-Xir" secondAttribute="baseline" id="RWx-wy-l6p"/>
+                                        <constraint firstItem="hLJ-RZ-wqa" firstAttribute="leading" secondItem="Qqb-p5-Rj9" secondAttribute="leading" id="V8U-hA-IVu"/>
+                                        <constraint firstItem="BPO-wF-D5h" firstAttribute="baseline" secondItem="djL-x9-Xir" secondAttribute="baseline" id="WN8-R9-JaA"/>
+                                        <constraint firstItem="JYk-t9-myF" firstAttribute="leading" secondItem="jaF-wS-czi" secondAttribute="trailing" constant="36" id="ZVF-Pz-iIK"/>
+                                        <constraint firstItem="hLJ-RZ-wqa" firstAttribute="top" secondItem="Qqb-p5-Rj9" secondAttribute="bottom" constant="8" symbolic="YES" id="c6h-gb-jiC"/>
+                                        <constraint firstItem="hLJ-RZ-wqa" firstAttribute="leading" secondItem="ew4-4a-dCF" secondAttribute="leadingMargin" id="eRh-XU-daB"/>
+                                        <constraint firstItem="jaF-wS-czi" firstAttribute="baseline" secondItem="hLJ-RZ-wqa" secondAttribute="firstBaseline" id="fcx-yY-jzW"/>
+                                        <constraint firstItem="r1x-0f-4hV" firstAttribute="trailing" secondItem="ew4-4a-dCF" secondAttribute="trailingMargin" id="hQj-j6-eIj"/>
+                                        <constraint firstItem="BPO-wF-D5h" firstAttribute="leading" secondItem="djL-x9-Xir" secondAttribute="trailing" constant="18" id="jGo-s6-Auu"/>
+                                        <constraint firstItem="BPO-wF-D5h" firstAttribute="trailing" secondItem="JYk-t9-myF" secondAttribute="trailing" id="loe-If-ff7"/>
+                                        <constraint firstItem="jaF-wS-czi" firstAttribute="leading" secondItem="djL-x9-Xir" secondAttribute="leading" id="qKE-4f-bq9"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="hLJ-RZ-wqa" secondAttribute="bottom" constant="-4.5" id="s7v-7p-fNy"/>
+                                        <constraint firstItem="r1x-0f-4hV" firstAttribute="leading" secondItem="Zhz-Qx-rPV" secondAttribute="leading" id="zdW-Oo-5A7"/>
+                                        <constraint firstItem="hLJ-RZ-wqa" firstAttribute="baseline" secondItem="jaF-wS-czi" secondAttribute="baseline" id="zmK-Cp-37Q"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="dateLabel" destination="hLJ-RZ-wqa" id="D5O-s2-DQe"/>
+                                    <outlet property="distanceLabel" destination="JYk-t9-myF" id="j0v-ml-qWI"/>
+                                    <outlet property="floorsLabel" destination="r1x-0f-4hV" id="rKs-TV-ars"/>
+                                    <outlet property="stepsLabel" destination="jaF-wS-czi" id="0o6-Df-eHv"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="23z-Wm-MKu" id="tgW-lf-m84"/>
+                            <outlet property="delegate" destination="23z-Wm-MKu" id="CEI-7h-VfL"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iXs-VB-6Tr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="596" y="1107"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="gaS-BF-7Gi">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="f5W-wq-d8b" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="6A0-Mx-odn">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="cZX-Qn-SGX" kind="relationship" relationship="rootViewController" id="hog-H0-GEQ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Iht-XC-0L0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1255" y="740"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="5yX-zy-Vd7"/>
+    </inferredMetricsTieBreakers>
+</document>
